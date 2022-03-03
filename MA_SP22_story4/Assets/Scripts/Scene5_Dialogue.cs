@@ -36,6 +36,7 @@ void Start(){         // initial visibility settings
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
+        //  NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -99,11 +100,17 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2name.text = "";
                  Char2speech.text = "";
          }
-       else if (primeInt == 9){
-                Char1name.text = "";
+         else if (primeInt ==9){
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "Dagon";
+                  Char2speech.text = "God, I have more emotional intelligence in my left gill than Yog has in his whole body! I don’t see you bothering him?";
+          }
+       else if (primeInt == 10){
+                Char1name.text = "YOU";
                 Char1speech.text = "";
-                Char2name.text = "Dagon";
-                Char2speech.text = "God, I have more emotional intelligence in my left gill than Yog has in his whole body! I don’t see you bothering him?";
+                Char2name.text = "";
+                Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -112,32 +119,21 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Then you are no use to me, and must be silenced.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 101){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Come back here! Do not think you can hide from me!";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Dagon";
+                Char2speech.text = "Fine… I can’t get in trouble again this week…";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
         }
 
+
        else if (primeInt == 200){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 201){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char2name.text = "Dagon";
+                Char2speech.text = "Ugh, maybe you’re right…";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -146,24 +142,24 @@ public void talking(){         // main story function. Players hit next to progr
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "I don't know what you're talking about!";
+                Char1name.text = "YOU";
+                Char1speech.text = "I'm going to have to call Principal Kthulu back in to reprimand you.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 primeInt = 99;
-                Choice1a.SetActive(false);
+                Choice1a.SetActive(true);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Sure, anything you want... just lay off the club.";
+                Char1name.text = "YOU";
+                Char1speech.text = "What would Mother Hydra think if she saw this outburst?";
+                Char2name.text = "";
+                Char2speech.text = "";
                 primeInt = 199;
                 Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
+                Choice1b.SetActive(true);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -171,7 +167,6 @@ public void talking(){         // main story function. Players hit next to progr
         public void SceneChange1(){
                SceneManager.LoadScene("Scene2a");
         }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+        //public void SceneChange2(){
+                //SceneManager.LoadScene("Scene2b");
         }
-}
