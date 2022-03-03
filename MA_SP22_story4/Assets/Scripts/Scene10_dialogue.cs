@@ -126,7 +126,7 @@ public void talking(){         // main story function. Players hit next to progr
                     Char2speech.text = "";
           }
          else if (primeInt == 13){
-                Char1name.text = "";
+                Char1name.text = "YOU";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -156,36 +156,40 @@ public void talking(){         // main story function. Players hit next to progr
 
 
         else if (primeInt == 300){
-                 Char1name.text = "YOU";
-                 Char1speech.text = "It’s just some runes! It can’t be that hard to just use paper!";
-                 Char2name.text = "";
-                 Char2speech.text = "";
+                 Char1name.text = "";
+                 Char1speech.text = "";
+                 Char2name.text = "YOG";
+                 Char2speech.text = "AAAAAAARRRGGGGHHH!!!!";
          }
          else if (primeInt == 301){
                   Char1name.text = "YOU";
-                  Char1speech.text = "It’s just some runes! It can’t be that hard to just use paper!";
+                  Char1speech.text = "[I’ve screwed up.]";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
           else if (primeInt == 302){
                    Char1name.text = "YOU";
-                   Char1speech.text = "It’s just some runes! It can’t be that hard to just use paper!";
+                   Char1speech.text = "[Yog’s power starts to come off of him in waves, and I'm clearly the target.]";
                    Char2name.text = "";
                    Char2speech.text = "";
            }
            else if (primeInt == 303){
                     Char1name.text = "YOU";
-                    Char1speech.text = "It’s just some runes! It can’t be that hard to just use paper!";
+                    Char1speech.text = "[I have to get behind the desk!]";
                     Char2name.text = "";
                     Char2speech.text = "";
             }
-
-
-       else if (primeInt == 201){
+            else if (primeInt == 303){
+                     Char1name.text = "YOU";
+                     Char1speech.text = "[I have to get behind the desk!]";
+                     Char2name.text = "";
+                     Char2speech.text = "";
+             }
+       else if (primeInt == 304){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char2name.text = "YOG";
+                Char2speech.text = "You are pathetic and idiotic, substitute! I will smite you where you stand for disrespecting the Oldest Ones!";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
