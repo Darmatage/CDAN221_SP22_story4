@@ -14,13 +14,14 @@ public class Scene5_Dialogue : MonoBehaviour {
        //public Text Char3name;
        //public Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ArtChar1;
+        public GameObject ArtDagonSad;
+        public GameObject ArtDagonNormal;
+        public GameObject ArtDagonMonster;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
-        public GameObject NextScene2Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
@@ -28,12 +29,13 @@ public class Scene5_Dialogue : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
-        ArtChar1.SetActive(false);
+        ArtDagonNormal.SetActive(false);
+        ArtDagonSad.SetActive(false);
+        ArtDagonMonster.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -52,50 +54,56 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(true);
+               ArtDagonNormal.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "Jeda";
-                Char1speech.text = "Wakey wakey, human.";
+                Char1name.text = "YOU";
+                Char1speech.text = "Careful!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wuh..? What happened?";
+                Char2name.text = "Dagon";
+                Char2speech.text = "What?";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
+                Char1name.text = "YOU";
+                Char1speech.text = "You’re getting all worked up! You need to calm down.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char2name.text = "Dagon";
+                Char2speech.text = "Are you serious? This IS me calm!";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char1name.text = "YOU";
+                Char1speech.text = "[The sinks rumbling...]";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char2name.text = "Dagon";
+                Char2speech.text = "Like, sorry for having feelings! Sorry for letting the tiniest bit of my emotions show!";
         }
-       else if (primeInt == 8){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt ==8){
+                 Char1name.text = "YOU";
+                 Char1speech.text = "[Oh no, more rumbling.]";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+         }
+       else if (primeInt == 9){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Dagon";
+                Char2speech.text = "God, I have more emotional intelligence in my left gill than Yog has in his whole body! I don’t see you bothering him?";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -132,7 +140,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+                NextScene1Button.SetActive(true);
         }
      }
 
