@@ -23,7 +23,7 @@ public class Scene1_Dialogue : MonoBehaviour {
         public GameObject dialogue;
         public GameObject ArtKthulu1;
         public GameObject ArtDagon1;
-        public GameObject ArtYag1;
+        public GameObject ArtYog1;
         public GameObject ArtNar1;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -64,7 +64,7 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(false);
+               ArtKthulu1.SetActive(false);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "[Today, you have been asked to sub in as a detention teacher at Lovecraft High.]";
@@ -72,7 +72,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt == 3){
-               ArtChar1.SetActive(false);
+               ArtKthulu1.SetActive(false);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "[It’s your first time substituting at this school, but it is in the district you usually go around in, so it's not too surprising that the school would ask you to do this. Though…]";
@@ -80,7 +80,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt == 4){
-               ArtChar1.SetActive(false);
+               ArtKthulu1.SetActive(false);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "[This school is for monsters of the unfathomable kind. You like the stories, but you aren't sure if you’re ready to meet the real deal.]";
@@ -88,7 +88,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt == 5){
-               ArtChar1.SetActive(false);
+               ArtKthulu1.SetActive(false);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Hello. I’m here to sub in for detention?";
@@ -96,7 +96,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt ==6){
-              ArtChar1.SetActive(true);
+              ArtKthulu1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -105,7 +105,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 7){
-               ArtChar1.SetActive(false);
+               ArtKthulu1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Is there a problem?";
@@ -113,7 +113,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt ==8){
-               ArtChar1.SetActive(true);
+               ArtKthulu1.SetActive(true);
                  dialogue.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
@@ -122,7 +122,7 @@ public void talking(){         // main story function. Players hit next to progr
                  //gameHandler.AddPlayerStat(1);
          }
          else if (primeInt == 9){
-                ArtChar1.SetActive(false);
+                ArtKthulu1.SetActive(true);
                  dialogue.SetActive(true);
                  Char1name.text = "YOU";
                  Char1speech.text = "[Principal Kthulu looks you up and down. You kind of regret dressing business casual instead of full business.]";
@@ -130,7 +130,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
          }
          else if (primeInt ==10){
-                ArtChar1.SetActive(true);
+                ArtKthulu1.SetActive(true);
                   dialogue.SetActive(true);
                   Char1name.text = "";
                   Char1speech.text = "";
@@ -139,7 +139,7 @@ public void talking(){         // main story function. Players hit next to progr
                   //gameHandler.AddPlayerStat(1);
           }
           else if (primeInt ==11){
-                 ArtChar1.SetActive(true);
+                 ArtKthulu1.SetActive(true);
                    dialogue.SetActive(true);
                    Char1name.text = "";
                    Char1speech.text = "";
@@ -148,7 +148,7 @@ public void talking(){         // main story function. Players hit next to progr
                    //gameHandler.AddPlayerStat(1);
            }
            else if (primeInt ==12){
-                  ArtChar1.SetActive(true);
+                  ArtKthulu1.SetActive(true);
                     dialogue.SetActive(true);
                     Char1name.text = "";
                     Char1speech.text = "";
@@ -170,7 +170,7 @@ public void talking(){         // main story function. Players hit next to progr
 
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-            ArtChar1.SetActive(true);
+            ArtKthulu1.SetActive(true);
               dialogue.SetActive(true);
                 Char1name.text = "Kthulu";
                 Char1speech.text = "I’ll leave you be now, call if anything goes awry.";
@@ -178,7 +178,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 101){
-            ArtChar1.SetActive(false);
+            ArtKthulu1.SetActive(false);
               dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "[You look at your three students.]";
@@ -189,7 +189,7 @@ public void talking(){         // main story function. Players hit next to progr
                 NextScene1Button.SetActive(true);
         }
         else if (primeInt == 102){
-             ArtChar1.SetActive(false);
+             ArtKthulu1.SetActive(false);
                dialogue.SetActive(true);
                  Char1name.text = "YOU";
                  Char1speech.text = "[There’s some sort of… fish monster fiddling with the sink in the back, shaking it kind of like the sink is a vending machine with the chip bag stuck.]";
@@ -201,7 +201,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
 
        else if (primeInt == 103){
-         ArtChar2.SetActive(true);
+         ArtDagon1.SetActive(true);
            dialogue.SetActive(true);
              Char3name.text = "Dagon";
              Char3speech.text = "grumble…grumble…c’mon you stupid sink… grumble…";
@@ -215,7 +215,7 @@ public void talking(){         // main story function. Players hit next to progr
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
-              ArtChar1.SetActive(true);
+              ArtKthulu1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -228,7 +228,7 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-              ArtChar1.SetActive(true);
+              ArtKthulu1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
