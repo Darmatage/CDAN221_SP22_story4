@@ -134,8 +134,7 @@ public void talking(){         // main story function. Players hit next to progr
                      Char2name.text = "";
                      Char2speech.text = "";
              }
-
-       else if (primeInt == 10){
+       else if (primeInt == 13){
          ArtDagonNormal.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "";
