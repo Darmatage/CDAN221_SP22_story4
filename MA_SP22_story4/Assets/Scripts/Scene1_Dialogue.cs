@@ -11,10 +11,20 @@ public class Scene1_Dialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
+        public Text Char3name;
+        public Text Char3speech;
+        public Text Char4name;
+        public Text Char4speech;
+        public Text Char5name;
+        public Text Char5speech;
+
         //public Text Char3name;
         //public Text Char3speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
+        public GameObject ArtChar2;
+        public GameObject ArtChar3;
+        public GameObject ArtChar4;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -27,7 +37,10 @@ public class Scene1_Dialogue : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
-        ArtChar1.SetActive(false);
+        ArtKthulu1.SetActive(false);
+        ArtDagon1.SetActive(false);
+        ArtYog1.SetActive(false);
+        ArtNar1.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -51,96 +64,161 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(true);
+               ArtChar1.SetActive(false);
                 dialogue.SetActive(true);
-                Char1name.text = "Jeda";
-                Char1speech.text = "Wakey wakey, human.";
+                Char1name.text = "YOU";
+                Char1speech.text = "[Today, you have been asked to sub in as a detention teacher at Lovecraft High.]";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==3){
+        else if (primeInt == 3){
+               ArtChar1.SetActive(false);
+                dialogue.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "[It’s your first time substituting at this school, but it is in the district you usually go around in, so it's not too surprising that the school would ask you to do this. Though…]";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 4){
+               ArtChar1.SetActive(false);
+                dialogue.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "[This school is for monsters of the unfathomable kind. You like the stories, but you aren't sure if you’re ready to meet the real deal.]";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 5){
+               ArtChar1.SetActive(false);
+                dialogue.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Hello. I’m here to sub in for detention?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt ==6){
+              ArtChar1.SetActive(true);
+                dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wuh..? What happened?";
+                Char2name.text = "Principal Kthulu";
+                Char2speech.text = "Huh.";
                 //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 4){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
+        else if (primeInt == 7){
+               ArtChar1.SetActive(false);
+                dialogue.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Is there a problem?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 5){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
-        }
+        else if (primeInt ==8){
+               ArtChar1.SetActive(true);
+                 dialogue.SetActive(true);
+                 Char1name.text = "";
+                 Char1speech.text = "";
+                 Char2name.text = "Principal Kthulu";
+                 Char2speech.text = "You have less eyes than I was expecting.";
+                 //gameHandler.AddPlayerStat(1);
+         }
+         else if (primeInt == 9){
+                ArtChar1.SetActive(false);
+                 dialogue.SetActive(true);
+                 Char1name.text = "YOU";
+                 Char1speech.text = "[Principal Kthulu looks you up and down. You kind of regret dressing business casual instead of full business.]";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+         }
+         else if (primeInt ==10){
+                ArtChar1.SetActive(true);
+                  dialogue.SetActive(true);
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "Principal Kthulu";
+                  Char2speech.text = "I suppose it's no matter, you're just covering detention.";
+                  //gameHandler.AddPlayerStat(1);
+          }
+          else if (primeInt ==11){
+                 ArtChar1.SetActive(true);
+                   dialogue.SetActive(true);
+                   Char1name.text = "";
+                   Char1speech.text = "";
+                   Char2name.text = "Principal Kthulu";
+                   Char2speech.text = "We have three students staying for detention today. Daegon, Yog-Sothoth, and Nyarlathotep.";
+                   //gameHandler.AddPlayerStat(1);
+           }
+           else if (primeInt ==12){
+                  ArtChar1.SetActive(true);
+                    dialogue.SetActive(true);
+                    Char1name.text = "";
+                    Char1speech.text = "";
+                    Char2name.text = "Principal Kthulu";
+                    Char2speech.text = "I trust you’ll do alright with them?";
+                    //gameHandler.AddPlayerStat(1);
+            }
+            else if (primeInt == 13){
+                     Char1name.text = "YOU";
+                     Char1speech.text = "";
+                     Char2name.text = "";
+                     Char2speech.text = "";
+                     // Turn off "Next" button, turn on "Choice" buttons
+                     nextButton.SetActive(false);
+                     allowSpace = false;
+                     Choice1a.SetActive(true); // function Choice1aFunct()
+                     Choice1b.SetActive(true); // function Choice1bFunct()
+             }
+
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Then you are no use to me, and must be silenced.";
+            ArtChar1.SetActive(true);
+              dialogue.SetActive(true);
+                Char1name.text = "Kthulu";
+                Char1speech.text = "I’ll leave you be now, call if anything goes awry.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 101){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Come back here! Do not think you can hide from me!";
+            ArtChar1.SetActive(false);
+              dialogue.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "[You look at your three students.]";
                 Char2name.text = "";
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
         }
+        else if (primeInt == 102){
+             ArtChar1.SetActive(false);
+               dialogue.SetActive(true);
+                 Char1name.text = "YOU";
+                 Char1speech.text = "[There’s some sort of… fish monster fiddling with the sink in the back, shaking it kind of like the sink is a vending machine with the chip bag stuck.]";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+                 nextButton.SetActive(false);
+                 allowSpace = false;
+                 NextScene1Button.SetActive(true);
+         }
 
-       else if (primeInt == 200){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 201){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
-        }
-     }
+       else if (primeInt == 103){
+         ArtChar2.SetActive(true);
+           dialogue.SetActive(true);
+             Char3name.text = "Dagon";
+             Char3speech.text = "grumble…grumble…c’mon you stupid sink… grumble…";
+             Char2name.text = "";
+             Char2speech.text = "";
+             nextButton.SetActive(false);
+             allowSpace = false;
+             NextScene1Button.SetActive(true);
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
+              ArtChar1.SetActive(true);
+                dialogue.SetActive(true)
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "I don't know what you're talking about!";
+                Char2name.text = "Kthulu";
+                Char2speech.text = "Excellent.";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -148,11 +226,13 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+              ArtChar1.SetActive(true);
+                dialogue.SetActive(true)
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Sure, anything you want... just lay off the club.";
-                primeInt = 199;
+                Char2name.text = "Kthulu";
+                Char2speech.text = "This isn't like your human detentions.";
+                primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
