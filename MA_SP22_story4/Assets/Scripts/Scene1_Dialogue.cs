@@ -21,10 +21,10 @@ public class Scene1_Dialogue : MonoBehaviour {
         //public Text Char3name;
         //public Text Char3speech;
         public GameObject dialogue;
-        public GameObject ArtChar1;
-        public GameObject ArtChar2;
-        public GameObject ArtChar3;
-        public GameObject ArtChar4;
+        public GameObject ArtKthulu1;
+        public GameObject ArtDagon1;
+        public GameObject ArtYag1;
+        public GameObject ArtNar1;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -210,11 +210,13 @@ public void talking(){         // main story function. Players hit next to progr
              nextButton.SetActive(false);
              allowSpace = false;
              NextScene1Button.SetActive(true);
+           }
+}
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
               ArtChar1.SetActive(true);
-                dialogue.SetActive(true)
+                dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Kthulu";
@@ -227,7 +229,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         public void Choice1bFunct(){
               ArtChar1.SetActive(true);
-                dialogue.SetActive(true)
+                dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Kthulu";
