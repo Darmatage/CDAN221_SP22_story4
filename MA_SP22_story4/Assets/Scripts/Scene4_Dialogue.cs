@@ -191,6 +191,89 @@ else if (primeInt == 110){
          NextScene1Button.SetActive(true);
          NextScene2Button.SetActive(true);
 }
+
+else if (primeInt == 200){
+  ArtNarAngry1.SetActive(false);
+  ArtNarAngry2.SetActive(true);
+         Char1name.text = "YOU";
+         Char1speech.text = "But seriously, what are you doing?";
+         Char2name.text = "";
+         Char2speech.text = "";
+         nextButton.SetActive(true);
+         allowSpace = false;
+         NextScene1Button.SetActive(false);
+ }
+ else if (primeInt == 201){
+   ArtNarAngry2.SetActive(true);
+          Char1name.text = "";
+          Char1speech.text = "";
+          Char2name.text = "Nar";
+          Char2speech.text = "A prank.";
+}
+else if (primeInt == 202){
+ArtNarAngry2.SetActive(true);
+       Char1name.text = "YOU";
+       Char1speech.text = "What kind of prank?";
+       Char2name.text = "";
+       Char2speech.text = "";
+}
+else if (primeInt == 203){
+ArtNarAngry2.SetActive(false);
+ArtNarNormal.SetActive(true);
+      Char1name.text = "";
+      Char1speech.text = "";
+      Char2name.text = "Nar";
+      Char2speech.text = "It’s pretty casual, really. I ordered some food and I gotta make sure it gets to the right place.";
+}
+else if (primeInt == 204){
+     Char1name.text = "YOU";
+     Char1speech.text = "How’s this food supposed to arrive?";
+     Char2name.text = "";
+     Char2speech.text = "";
+}
+else if (primeInt == 205){
+ArtNarAngry1.SetActive(true);
+    Char1name.text = "";
+    Char1speech.text = "";
+    Char2name.text = "Nar";
+    Char2speech.text = "Through the portal.";
+}
+else if (primeInt == 206){
+   Char1name.text = "YOU";
+   Char1speech.text = "The- The what?";
+   Char2name.text = "";
+   Char2speech.text = "";
+}
+else if (primeInt == 207){
+ArtNarAngry1.SetActive(false);
+ArtNarAngry2.SetActive(true);
+  Char1name.text = "";
+  Char1speech.text = "";
+  Char2name.text = "Nar";
+  Char2speech.text = "The portal. That the delivery demon’s going to come out of.";
+}
+else if (primeInt == 208){
+  Char1name.text = "YOU";
+  Char1speech.text = "The delivery demon is going to come out of a portal?";
+  Char2name.text = "";
+  Char2speech.text = "";
+}
+else if (primeInt == 209){
+  Char1name.text = "";
+  Char1speech.text = "";
+  Char2name.text = "Nar";
+  Char2speech.text = "Yes. Now, go away. Can’t have a human messing up my video.";
+}
+else if (primeInt == 210){
+  Char1name.text = "YOU";
+  Char1speech.text = "";
+  Char2name.text = "";
+  Char2speech.text = "";
+  nextButton.SetActive(false);
+  allowSpace = false;
+  NextScene1Button.SetActive(true);
+  NextScene2Button.SetActive(true);
+}
 }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
@@ -209,7 +292,7 @@ else if (primeInt == 110){
                 Char1speech.text = "";
                 Char2name.text = "Nar";
                 Char2speech.text = "Yeah... Suuure.";
-                primeInt = 99;
+                primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
