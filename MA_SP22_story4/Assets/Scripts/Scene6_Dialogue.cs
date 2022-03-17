@@ -153,7 +153,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
                 Char2speech.text = "Yeah, no. I have a better idea of how to prove myself.";
-                nextButton.SetActive(false);
+                nextButton.SetActive(true);
 }
        else if (primeInt == 101){
          ArtDagonNormal.SetActive(true);
