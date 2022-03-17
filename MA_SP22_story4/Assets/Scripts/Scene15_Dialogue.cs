@@ -15,8 +15,8 @@ public class Scene15_Dialogue : MonoBehaviour {
         public Text Char3speech;
         public Text Char4name;
         public Text Char4speech;
-        public Text Char5name;
-        public Text Char5speech;
+        //public Text Char5name;
+        //public Text Char5speech;
 
         //public Text Char3name;
         //public Text Char3speech;
@@ -26,11 +26,11 @@ public class Scene15_Dialogue : MonoBehaviour {
         public GameObject ArtYog1;
         public GameObject ArtNar1;
         public GameObject ArtBG1;
-        public GameObject Choice1a;
-        public GameObject Choice1b;
+        //public GameObject Choice1a;
+        //public GameObject Choice1b;
         public GameObject NextScene1Button;
-        public GameObject NextScene2Button;
-        public GameObject NextScene3Button;
+        //public GameObject NextScene2Button;
+        //public GameObject NextScene3Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
@@ -43,11 +43,11 @@ void Start(){         // initial visibility settings
         ArtYog1.SetActive(false);
         ArtNar1.SetActive(false);
         ArtBG1.SetActive(true);
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
+        //Choice1a.SetActive(false);
+        //Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
-        NextScene3Button.SetActive(false);
+        //NextScene2Button.SetActive(false);
+        //NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -72,6 +72,12 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "I shouldn’t have hired a human to watch over the three of you today.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+
+
         }
         else if (primeInt == 3){
                ArtKthulu1.SetActive(false);
@@ -134,39 +140,40 @@ public void talking(){         // main story function. Players hit next to progr
 
 }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
-        public void Choice1aFunct(){
-              ArtKthulu1.SetActive(true);
-                dialogue.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Kthulu";
-                Char2speech.text = "Excellent.";
-                primeInt = 99;
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
-        public void Choice1bFunct(){
-              ArtKthulu1.SetActive(true);
-                dialogue.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Kthulu";
-                Char2speech.text = "This isn't like your human detentions.";
-                primeInt = 99;
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
+        // public void Choice1aFunct(){
+        //       ArtKthulu1.SetActive(true);
+        //         dialogue.SetActive(true);
+        //         Char1name.text = "";
+        //         Char1speech.text = "";
+        //         Char2name.text = "Kthulu";
+        //         Char2speech.text = "Excellent.";
+        //         primeInt = 99;
+        //         Choice1a.SetActive(false);
+        //         Choice1b.SetActive(false);
+        //         nextButton.SetActive(true);
+        //         allowSpace = true;
+        // }
+        // public void Choice1bFunct(){
+        //       ArtKthulu1.SetActive(true);
+        //         dialogue.SetActive(true);
+        //         Char1name.text = "";
+        //         Char1speech.text = "";
+        //         Char2name.text = "Kthulu";
+        //         Char2speech.text = "This isn't like your human detentions.";
+        //         primeInt = 99;
+        //         Choice1a.SetActive(false);
+        //         Choice1b.SetActive(false);
+        //         nextButton.SetActive(true);
+        //         allowSpace = true;
+        // }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene");
+               SceneManager.LoadScene("End_Lose");
         }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
-        }
-        public void SceneChange3(){
-                SceneManager.LoadScene("Scene2c");
-}}
+        //public void SceneChange2(){
+                //SceneManager.LoadScene("Scene2b");
+        //}
+        //public void SceneChange3(){
+                //SceneManager.LoadScene("Scene2c");
+              //}
+}
