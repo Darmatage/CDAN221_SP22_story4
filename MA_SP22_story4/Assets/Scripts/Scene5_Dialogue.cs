@@ -71,14 +71,14 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-         ArtDagonNormal.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "You’re getting all worked up! You need to calm down.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-         ArtDagonNormal.SetActive(true);
+         ArtDagonNormal.SetActive(false);
+         ArtDagonMonster.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
@@ -86,35 +86,31 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-         ArtDagonNormal.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "[The sinks rumbling...]";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
-         ArtDagonNormal.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
                 Char2speech.text = "Like, sorry for having feelings! Sorry for letting the tiniest bit of my emotions show!";
         }
         else if (primeInt ==8){
-          ArtDagonNormal.SetActive(false);
                  Char1name.text = "YOU";
                  Char1speech.text = "[Oh no, more rumbling.]";
                  Char2name.text = "";
                  Char2speech.text = "";
          }
          else if (primeInt ==9){
-           ArtDagonNormal.SetActive(true);
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "Dagon";
                   Char2speech.text = "God, I have more emotional intelligence in my left gill than Yog has in his whole body! I don’t see you bothering him?";
           }
        else if (primeInt == 10){
-         ArtDagonNormal.SetActive(false);
+         ArtDagonMonster.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -127,7 +123,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-         ArtDagonNormal.SetActive(true);
+         ArtDagonSad.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
@@ -139,7 +135,7 @@ public void talking(){         // main story function. Players hit next to progr
 
 
        else if (primeInt == 200){
-         ArtDagonNormal.SetActive(true);
+         ArtDagonSad.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
