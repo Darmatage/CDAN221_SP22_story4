@@ -30,6 +30,7 @@ public class Scene1_Dialogue : MonoBehaviour {
         public GameObject Choice1b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+        public GameObject NextScene3Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
@@ -46,6 +47,7 @@ void Start(){         // initial visibility settings
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -184,36 +186,37 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "[You look at your three students.]";
                 Char2name.text = "";
                 Char2speech.text = "";
-                nextButton.SetActive(false);
+                nextButton.SetActive(true);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
+                NextScene1Button.SetActive(false);
         }
 
         else if (primeInt == 102){
+            ArtDagon1.SetActive(true);
              ArtKthulu1.SetActive(false);
                dialogue.SetActive(true);
                  Char1name.text = "YOU";
                  Char1speech.text = "[There’s some sort of… fish monster fiddling with the sink in the back, shaking it kind of like the sink is a vending machine with the chip bag stuck.]";
                  Char2name.text = "";
                  Char2speech.text = "";
-                 nextButton.SetActive(false);
+                 nextButton.SetActive(true);
                  allowSpace = false;
-                 NextScene1Button.SetActive(true);
+                 NextScene1Button.SetActive(false);
          }
 
-       else if (primeInt == 103){
+       else if (primeInt == 104){
          ArtDagon1.SetActive(true);
            dialogue.SetActive(true);
              Char3name.text = "Dagon";
              Char3speech.text = "grumble…grumble…c’mon you stupid sink… grumble…";
              Char2name.text = "";
              Char2speech.text = "";
-             nextButton.SetActive(false);
+             nextButton.SetActive(true);
              allowSpace = false;
-             NextScene1Button.SetActive(true);
+             NextScene1Button.SetActive(false);
 
           }
-        else if (primeInt == 102){
+        else if (primeInt == 105){
           ArtDagon1.SetActive(false);
              ArtYog1.SetActive(true);
              dialogue.SetActive(true);
@@ -221,72 +224,73 @@ public void talking(){         // main story function. Players hit next to progr
              Char1speech.text = "[There’s also a monster sitting at a desk hunched over. Most of what’s going on is covered up by tentacles, but you don’t think there’s a piece of paper between that pen and the desk.]";
              Char2name.text = "";
              Char2speech.text = "";
-             nextButton.SetActive(false);
+             nextButton.SetActive(true);
              allowSpace = false;
-             NextScene1Button.SetActive(true);
+             NextScene1Button.SetActive(false);
           }
-      else if (primeInt == 102){
+      else if (primeInt == 106){
         ArtYog1.SetActive(true);
           dialogue.SetActive(true);
             Char4name.text = "Yog";
             Char4speech.text = "I have to make sure the tribute is perfect… yes, that’s good.";
             Char2name.text = "";
             Char2speech.text = "";
-            nextButton.SetActive(false);
+            nextButton.SetActive(true);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
+            NextScene1Button.SetActive(false);
           }
 
-      else if (primeInt == 103){
+      else if (primeInt == 107){
         ArtYog1.SetActive(false);
           ArtNar1.SetActive(true);
+
           dialogue.SetActive(true);
           Char1name.text = "YOU";
           Char1speech.text = "[Finally, there’s a monster with a kind of cool vibe and a kind of… wild looking head, setting up a phone and clearing desks and chairs away from an area.]";
           Char2name.text = "";
           Char2speech.text = "";
-          nextButton.SetActive(false);
+          nextButton.SetActive(true);
           allowSpace = false;
-          NextScene1Button.SetActive(true);
+          NextScene1Button.SetActive(false);
           }
 
-       else if (primeInt == 103){
+       else if (primeInt == 108){
          ArtNar1.SetActive(true);
            dialogue.SetActive(true);
              Char1name.text = "YOU";
              Char1speech.text = "[Finally, there’s a monster with a kind of cool vibe and a kind of… wild looking head, setting up a phone and clearing desks and chairs away from an area.]";
              Char2name.text = "";
              Char2speech.text = "";
-             nextButton.SetActive(false);
+             nextButton.SetActive(true);
              allowSpace = false;
-             NextScene1Button.SetActive(true);
+             NextScene1Button.SetActive(false);
            }
 
-           else if (primeInt == 103){
+           else if (primeInt == 109){
              ArtNar1.SetActive(true);
                dialogue.SetActive(true);
                  Char5name.text = "Nyarlathotep";
                  Char5speech.text = "The viewers are gonna love this one. I’ve even got the chalk!";
                  Char2name.text = "";
                  Char2speech.text = "";
-                 nextButton.SetActive(false);
+                 nextButton.SetActive(true);
                  allowSpace = false;
-                 NextScene1Button.SetActive(true);
+                 NextScene1Button.SetActive(false);
             }
 
-            else if (primeInt == 103){
+            else if (primeInt == 110){
               ArtNar1.SetActive(false);
                   dialogue.SetActive(true);
                     Char1name.text = "YOU";
                     Char1speech.text = "[They all seem like troublemakers. You’ve got to figure out what’s going on.]";
                     Char2name.text = "";
                     Char2speech.text = "";
-                    nextButton.SetActive(false);
+                    nextButton.SetActive(true);
                     allowSpace = false;
-                    NextScene1Button.SetActive(true);
+                    NextScene1Button.SetActive(false);
               }
 
-              else if (primeInt == 103){
+              else if (primeInt == 111){
                  ArtNar1.SetActive(false);
                     dialogue.SetActive(true);
                       Char1name.text = "YOU";
@@ -296,7 +300,9 @@ public void talking(){         // main story function. Players hit next to progr
                       nextButton.SetActive(false);
                       allowSpace = false;
                       NextScene1Button.SetActive(true);
-               }
+                      NextScene2Button.SetActive(true);
+                      NextScene3Button.SetActive(true);
+  }
 }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
@@ -332,4 +338,6 @@ public void talking(){         // main story function. Players hit next to progr
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene2b");
         }
-}
+        public void SceneChange3(){
+                SceneManager.LoadScene("Scene2c");
+}}
