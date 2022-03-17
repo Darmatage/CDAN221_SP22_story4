@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene5_Dialogue : MonoBehaviour {
+public class Scene4_Dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -169,7 +169,29 @@ else if (primeInt == 107){
          Char2name.text = "Nar";
          Char2speech.text = "The portal. That the delivery demon’s going to come out of.";
 }
-
+else if (primeInt == 108){
+         Char1name.text = "YOU";
+         Char1speech.text = "The delivery demon is going to come out of a portal?";
+         Char2name.text = "";
+         Char2speech.text = "";
+}
+else if (primeInt == 109){
+         Char1name.text = "";
+         Char1speech.text = "";
+         Char2name.text = "Nar";
+         Char2speech.text = "Yes. Now, go away. Can’t have a human messing up my video.";
+}
+else if (primeInt == 110){
+         Char1name.text = "YOU";
+         Char1speech.text = "";
+         Char2name.text = "";
+         Char2speech.text = "";
+         nextButton.SetActive(false);
+         allowSpace = false;
+         NextScene1Button.SetActive(true);
+         NextScene2Button.SetActive(true);
+}
+}
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
                 Char1name.text = "";
@@ -200,3 +222,4 @@ else if (primeInt == 107){
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene13");
         }
+      }
