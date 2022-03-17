@@ -116,7 +116,7 @@ public void talking(){         // main story function. Players hit next to progr
                ArtKthulu1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "Kthulu";
-                Char1speech.text = "...In any case, I apologize for such poor supervision.?";
+                Char1speech.text = "...In any case, I apologize for such poor supervision.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
