@@ -43,7 +43,7 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtNar1.SetActive(true);
+               ArtNar1.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "You";
                 Char1speech.text = "Another successful student interaction. To teach really IS to change lives forever, huh? ";
