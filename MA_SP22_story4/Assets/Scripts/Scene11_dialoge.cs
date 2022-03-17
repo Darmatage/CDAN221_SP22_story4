@@ -192,7 +192,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
          }
          else if (primeInt == 301){
-                  ArtNar1.SetActive(false);
+                  ArtNar1.SetActive(true);
                   ArtNar2.SetActive(true);
                   Char1name.text = "DA";
                   Char1speech.text = "Hey, did you order enough for everyone?";
@@ -201,15 +201,15 @@ public void talking(){         // main story function. Players hit next to progr
           }
           else if (primeInt == 302){
             ArtNar1.SetActive(true);
-            ArtNar2.SetActive(false);
+            ArtNar2.SetActive(true);
                    Char1name.text = "";
                    Char1speech.text = "";
                    Char2name.text = "NAR";
                    Char2speech.text = "What do you take for for? A jerk? Everyone's eating today.";
            }
            else if (primeInt == 303){
-                    ArtNar1.SetActive(false);
-                    ArtNar2.SetActive(true);
+                    ArtNar1.SetActive(true);
+                    ArtNar3.SetActive(true);
                     Char1name.text = "YOG";
                     Char1speech.text = "[As soon as this human;s in the portal, I'm going right back to drawing for the Oldest Ones.]";
                     Char2name.text = "";
@@ -217,7 +217,8 @@ public void talking(){         // main story function. Players hit next to progr
             }
             else if (primeInt == 304){
               ArtNar1.SetActive(true);
-              ArtNar2.SetActive(false);
+              ArtNar2.SetActive(true);
+              ArtNar3.SetActive(true);
                      Char1name.text = "YOU";
                      Char1speech.text = "This sucks.";
                      Char2name.text = "";
