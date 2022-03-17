@@ -340,8 +340,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene5_Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1730681144}
+        m_TargetAssemblyTypeName: Scene14_Dialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
@@ -2340,8 +2340,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene5_Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1730681144}
+        m_TargetAssemblyTypeName: Scene14_Dialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:

@@ -139,6 +139,6 @@ public void talking(){         // main story function. Players hit next to progr
 // ENCOUNTER AFTER CHOICE #1
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene11");
+               SceneManager.LoadScene("End_Win");
         }
       }

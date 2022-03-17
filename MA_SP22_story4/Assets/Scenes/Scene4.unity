@@ -482,9 +482,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 490578009}
-        m_TargetAssemblyTypeName: Scene6_Dialogue, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 490578010}
+        m_TargetAssemblyTypeName: Scene4_Dialogue, Assembly-CSharp
+        m_MethodName: talking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
