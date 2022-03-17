@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 1389324500}
   - component: {fileID: 1389324499}
   m_Layer: 5
-  m_Name: ArtChr1
+  m_Name: ArtNar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1326,6 +1326,7 @@ GameObject:
   - component: {fileID: 1749038157}
   - component: {fileID: 1749038156}
   - component: {fileID: 1749038155}
+  - component: {fileID: 1749038159}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1420,6 +1421,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1749038159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749038154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87840d52af95e41aea45fd8323a6f36d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1name: {fileID: 380564223}
+  Char1speech: {fileID: 1549914811}
+  Char2name: {fileID: 411308287}
+  Char2speech: {fileID: 1637654293}
+  DialogueDisplay: {fileID: 572924112}
+  ArtNar1: {fileID: 1389324497}
+  ArtBG1: {fileID: 1589763640}
+  NextScene1Button: {fileID: 76714640}
+  NextScene2Button: {fileID: 0}
+  nextButton: {fileID: 1522519137}
 --- !u!1 &1943158765
 GameObject:
   m_ObjectHideFlags: 0
