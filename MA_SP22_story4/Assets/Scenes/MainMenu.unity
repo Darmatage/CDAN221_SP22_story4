@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eec74b4a473a8432c9478da47d2096bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 316a38c807e214d80b833de9099820de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MENU
+  m_Text: 
 --- !u!222 &170282168
 CanvasRenderer:
   m_ObjectHideFlags: 0
