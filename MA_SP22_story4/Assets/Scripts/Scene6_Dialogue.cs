@@ -16,6 +16,7 @@ public class Scene6_Dialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtDagonSad;
         public GameObject ArtDagonNormal;
+        public GameObject ArtDagonAngry;
         public GameObject ArtDagonMonster;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
@@ -32,6 +33,7 @@ void Start(){         // initial visibility settings
         ArtDagonNormal.SetActive(false);
         ArtDagonSad.SetActive(false);
         ArtDagonMonster.SetActive(false);
+        ArtDagonAngry.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -55,7 +57,6 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-                ArtDagonNormal.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Wow, that’s quite the power you have! Mother Hydra must be very proud.";
@@ -71,14 +72,14 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-         ArtDagonNormal.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "A gifted student like you? I’m certain!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-         ArtDagonNormal.SetActive(true);
+         ArtDagonNormal.SetActive(false);
+         ArtDagonSad.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
@@ -86,13 +87,13 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-         ArtDagonNormal.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "You don't think?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
+         ArtDagonSad.SetActive(false);
          ArtDagonNormal.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -100,42 +101,39 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Well, my mentors think I need to do more to prove myself. But that’s just, like, so much work for me right now.";
         }
         else if (primeInt ==8){
-          ArtDagonNormal.SetActive(false);
                  Char1name.text = "YOU";
                  Char1speech.text = "I bet there are lots of small ways to prove yourself though! I can think of all kinds of ways you could apply yourself in the classroom to show that.";
                  Char2name.text = "";
                  Char2speech.text = "";
          }
          else if (primeInt ==9){
-           ArtDagonNormal.SetActive(true);
+           ArtDagonNormal.SetActive(false);
+           ArtDagonAngry.SetActive(true);
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "Dagon";
                   Char2speech.text = "Hm.. Maybe you’re right…";
           }
           else if (primeInt ==10){
-            ArtDagonNormal.SetActive(false);
                    Char1name.text = "YOU";
                    Char1speech.text = "I’m sure they’ll see how your strength academically could carry over to your strength, uh, aquatically.";
                    Char2name.text = "";
                    Char2speech.text = "";
            }
            else if (primeInt ==11){
-             ArtDagonNormal.SetActive(true);
                     Char1name.text = "";
                     Char1speech.text = "";
                     Char2name.text = "Dagon";
                     Char2speech.text = "My strength… Yeah, my strength.";
             }
             else if (primeInt ==12){
-              ArtDagonNormal.SetActive(false);
                      Char1name.text = "YOU";
                      Char1speech.text = "[The sink is rumbling again...]";
                      Char2name.text = "";
                      Char2speech.text = "";
              }
        else if (primeInt == 13){
-         ArtDagonNormal.SetActive(false);
+         ArtDagonAngry.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -148,7 +146,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100){
-          ArtDagonNormal.SetActive(true);
+                ArtDagonAngry.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
@@ -156,7 +154,8 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(true);
 }
        else if (primeInt == 101){
-         ArtDagonNormal.SetActive(true);
+                ArtDagonAngry.SetActive(false);
+                ArtDagonMonster.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Wait, no that’s not what I meant-";
                 Char2name.text = "";
@@ -168,7 +167,8 @@ public void talking(){         // main story function. Players hit next to progr
 
 
        else if (primeInt == 200){
-         ArtDagonNormal.SetActive(true);
+         ArtDagonAngry.SetActive(false);
+         ArtDagonMonster.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Dagon";
