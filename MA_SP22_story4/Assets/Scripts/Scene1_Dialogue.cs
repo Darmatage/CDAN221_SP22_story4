@@ -212,8 +212,8 @@ public void talking(){         // main story function. Players hit next to progr
        else if (primeInt == 104){
          ArtDagon1.SetActive(true);
            dialogue.SetActive(true);
-             Char3name.text = "Dagon";
-             Char3speech.text = "grumble…grumble…c’mon you stupid sink… grumble…";
+             Char1name.text = "Dagon";
+             Char1speech.text = "grumble…grumble…c’mon you stupid sink… grumble…";
              Char2name.text = "";
              Char2speech.text = "";
              nextButton.SetActive(true);
@@ -236,8 +236,8 @@ public void talking(){         // main story function. Players hit next to progr
       else if (primeInt == 106){
         ArtYog1.SetActive(true);
           dialogue.SetActive(true);
-            Char4name.text = "Yog";
-            Char4speech.text = "I have to make sure the tribute is perfect… yes, that’s good.";
+            Char1name.text = "Yog";
+            Char1speech.text = "I have to make sure the tribute is perfect… yes, that’s good.";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(true);
@@ -274,8 +274,8 @@ public void talking(){         // main story function. Players hit next to progr
            else if (primeInt == 109){
              ArtNar1.SetActive(true);
                dialogue.SetActive(true);
-                 Char5name.text = "Nyarlathotep";
-                 Char5speech.text = "The viewers are gonna love this one. I’ve even got the chalk!";
+                 Char1name.text = "Nyarlathotep";
+                 Char1speech.text = "The viewers are gonna love this one. I’ve even got the chalk!";
                  Char2name.text = "";
                  Char2speech.text = "";
                  nextButton.SetActive(true);
