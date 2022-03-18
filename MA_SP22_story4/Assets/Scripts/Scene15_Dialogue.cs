@@ -81,22 +81,26 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 3){
                ArtKthulu1.SetActive(false);
+               ArtNar1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "Nyarlathotep";
                 Char1speech.text = "Don’t worry about it, Mister Kthulu! This is just a lesson learned for all of us.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 4){
-               ArtKthulu1.SetActive(false);
-                dialogue.SetActive(true);
-                Char1name.text = "Kthulu";
-                Char1speech.text = "I just don’t understand the choices that led to this.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
+        // else if (primeInt == 4){
+        //        ArtKthulu1.SetActive(true);
+        //        ArtNar1.SetActive(false);
+        //         dialogue.SetActive(false);
+        //         Char1name.text = "Kthulu";
+        //         Char1speech.text = "I just don’t understand the choices that led to this.";
+        //         Char2name.text = "";
+        //         Char2speech.text = "";
+        //}
         else if (primeInt == 5){
                ArtKthulu1.SetActive(false);
+               ArtNar1.SetActive(false);
+               ArtDagon1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "Dagon";
                 Char1speech.text = "Well, I guess this means no more humans at the school. Even if they seem kind of cool.. I guess.";
@@ -104,7 +108,9 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt ==6){
-              ArtKthulu1.SetActive(true);
+              ArtKthulu1.SetActive(false);
+              ArtDagon1.SetActive(false);
+              ArtYog1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "Yog";
                 Char1speech.text = "The human was of no use at our school.";
@@ -114,6 +120,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 7){
                ArtKthulu1.SetActive(true);
+               ArtYog1.SetActive(false);
                 dialogue.SetActive(true);
                 Char1name.text = "Kthulu";
                 Char1speech.text = "...In any case, I apologize for such poor supervision.";
@@ -121,7 +128,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt ==8){
-               ArtKthulu1.SetActive(true);
+               ArtKthulu1.SetActive(false);
+               ArtNar1.SetActive(true);
                  dialogue.SetActive(true);
                  Char1name.text = "Nyarlathotep";
                  Char1speech.text = "Oh well. You want some Demonic Nuggets? I ordered a bunch.";
@@ -131,12 +139,18 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt == 9){
                 ArtKthulu1.SetActive(true);
+                ArtNar1.SetActive(false);
                  dialogue.SetActive(true);
                  Char1name.text = "Kthulu";
                  Char1speech.text = "Why not?";
                  Char2name.text = "";
                  Char2speech.text = "";
+                 NextScene1Button.SetActive(true);
+                 nextButton.SetActive(false);
          }
+
+
+
 
 }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)

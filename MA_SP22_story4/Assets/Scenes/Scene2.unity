@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Isn\u2019t there some sort of middle ground we could find?"
+  m_Text: Yes
 --- !u!222 &45969856
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -202,6 +202,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45969853}
   m_CullTransparentMesh: 1
+--- !u!1001 &107037206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2514952658715659662, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_Name
+      value: GameHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068697427968418217, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08863bf763bf047299d46195e15d3af6, type: 3}
 --- !u!1 &109329426
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 22e0a6023fb8d42ae981231567fd5a12, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc9ef575b0aa7411eb06ea8c69ea1f68, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -584,7 +641,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your runes are kind of bad, to be honest.
+  m_Text: No
 --- !u!222 &253220744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -769,7 +826,6 @@ RectTransform:
   - {fileID: 109329427}
   - {fileID: 1002146618}
   - {fileID: 1810235322}
-  - {fileID: 706760988}
   - {fileID: 1464737629}
   - {fileID: 1045982910}
   - {fileID: 1212065131}
@@ -797,94 +853,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
-  Char1name: {fileID: 131766136}
-  Char1speech: {fileID: 1627088084}
-  Char2name: {fileID: 181676207}
-  Char2speech: {fileID: 439268269}
+  Char1name: {fileID: 0}
+  Char1speech: {fileID: 0}
+  Char2name: {fileID: 0}
+  Char2speech: {fileID: 0}
   dialogue: {fileID: 1464737628}
-  ArtYogAngry1: {fileID: 1002146617}
-  ArtYogAngry2: {fileID: 1810235321}
-  ArtYogMonster: {fileID: 706760987}
-  ArtBG1: {fileID: 109329426}
-  Choice1a: {fileID: 1212065130}
-  Choice1b: {fileID: 1825568136}
-  NextScene1Button: {fileID: 1654646550}
-  nextButton: {fileID: 1045982909}
---- !u!1 &706760987
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 706760988}
-  - component: {fileID: 706760990}
-  - component: {fileID: 706760989}
-  m_Layer: 5
-  m_Name: ImageCharYogMonster
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &706760988
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706760987}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 530758845}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1280, y: 720}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &706760989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706760987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 68fde379aa6fa4d2f834a244a4a05242, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &706760990
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706760987}
-  m_CullTransparentMesh: 1
+  ArtDagon1: {fileID: 0}
+  ArtDagon2: {fileID: 0}
+  ArtBG1: {fileID: 0}
+  Choice1a: {fileID: 0}
+  Choice1b: {fileID: 0}
+  NextScene1Button: {fileID: 0}
+  NextScene2Button: {fileID: 0}
+  nextButton: {fileID: 0}
 --- !u!1 &735513744
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +957,7 @@ GameObject:
   - component: {fileID: 1002146620}
   - component: {fileID: 1002146619}
   m_Layer: 5
-  m_Name: ImageCharYogAngry1
+  m_Name: ImageChar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,7 +979,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 129, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002146619
@@ -1021,7 +1002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1de8cd0c80b6c4c27a5c63cfaf5665d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 166b5d6d581864fac8f7f39bec2d80cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1071,7 +1052,7 @@ RectTransform:
   m_Children:
   - {fileID: 735513745}
   m_Father: {fileID: 530758845}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1122,7 +1103,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 530758846}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene2_Dialouge, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
@@ -1204,7 +1185,7 @@ RectTransform:
   m_Children:
   - {fileID: 45969854}
   m_Father: {fileID: 530758845}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1255,7 +1236,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 530758846}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene2_Dialouge, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
@@ -1375,7 +1356,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: change 1
+  m_Text: No
 --- !u!222 &1354865533
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1538,7 +1519,7 @@ RectTransform:
   - {fileID: 231649917}
   - {fileID: 1924689051}
   m_Father: {fileID: 530758845}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1694,7 +1675,7 @@ RectTransform:
   m_Children:
   - {fileID: 1354865531}
   m_Father: {fileID: 530758845}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1745,7 +1726,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 530758846}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene2_Dialouge, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
@@ -1807,7 +1788,7 @@ GameObject:
   - component: {fileID: 1810235324}
   - component: {fileID: 1810235323}
   m_Layer: 5
-  m_Name: ImageCharYogAngry2
+  m_Name: ImageChar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1829,7 +1810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 131, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810235323
@@ -1852,7 +1833,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d0a984fe58f914c7a8e4cbed45205f3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8a2210b4313d4a9d8c8678a2afca9b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1902,7 +1883,7 @@ RectTransform:
   m_Children:
   - {fileID: 253220742}
   m_Father: {fileID: 530758845}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1953,7 +1934,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 530758846}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene2_Dialouge, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
