@@ -22,6 +22,7 @@ public class Scene1_Dialogue : MonoBehaviour {
         //public Text Char3speech;
         public GameObject dialogue;
         public GameObject ArtKthulu1;
+        public GameObject ArtKthulu2;
         public GameObject ArtDagon1;
         public GameObject ArtYog1;
         public GameObject ArtNar1;
@@ -39,6 +40,7 @@ public class Scene1_Dialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtKthulu1.SetActive(false);
+        ArtKthulu2.SetActive(false);
         ArtDagon1.SetActive(false);
         ArtYog1.SetActive(false);
         ArtNar1.SetActive(false);
@@ -115,7 +117,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt ==8){
-               ArtKthulu1.SetActive(true);
+              ArtKthulu1.SetActive(false);
+               ArtKthulu2.SetActive(true);
                  dialogue.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
@@ -125,6 +128,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt == 9){
                 ArtKthulu1.SetActive(true);
+                ArtKthulu2.SetActive(false);
                  dialogue.SetActive(true);
                  Char1name.text = "YOU";
                  Char1speech.text = "[Principal Kthulu looks you up and down. You kind of regret dressing business casual instead of full business.]";
@@ -173,6 +177,7 @@ public void talking(){         // main story function. Players hit next to progr
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
             ArtKthulu1.SetActive(true);
+            ArtKthulu2.SetActive(false);
               dialogue.SetActive(true);
                 Char1name.text = "Kthulu";
                 Char1speech.text = "I’ll leave you be now, call if anything goes awry.";
@@ -306,7 +311,8 @@ public void talking(){         // main story function. Players hit next to progr
 }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
-              ArtKthulu1.SetActive(true);
+          ArtKthulu1.SetActive(false);
+          ArtKthulu2.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -319,7 +325,8 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-              ArtKthulu1.SetActive(true);
+              ArtKthulu1.SetActive(false);
+              ArtKthulu2.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -333,11 +340,11 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene2");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene3");
         }
         public void SceneChange3(){
-                SceneManager.LoadScene("Scene2c");
+                SceneManager.LoadScene("Scene4");
 }}
