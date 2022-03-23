@@ -50,7 +50,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==3){
+       else if (primeInt == 3){
          ArtNar1.SetActive(true);
           DialogueDisplay.SetActive(true);
                 Char1name.text = "";
@@ -117,7 +117,7 @@ public void talking(){         // main story function. Players hit next to progr
                                   Char2speech.text = "";
 }
                 // Turn off "Next" button, turn on "Choice" buttons
-          {      nextButton.SetActive(false);
+          {      nextButton.SetActive(true);
                 allowSpace = false;
 //                Choice1a.SetActive(true); // function Choice1aFunct()
   //              Choice1b.SetActive(true); // function Choice1bFunct()
