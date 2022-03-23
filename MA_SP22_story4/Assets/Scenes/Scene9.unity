@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 439588738}
   - component: {fileID: 439588737}
   m_Layer: 5
-  m_Name: ArtChr1
+  m_Name: ArtYog1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
