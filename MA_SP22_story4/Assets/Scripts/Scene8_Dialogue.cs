@@ -64,6 +64,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
+        ArtDagon1.SetActive(true);
          ArtNar1.SetActive(true);
           DialogueDisplay.SetActive(true);
                 Char1name.text = "";
@@ -72,6 +73,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Wow Dags, I didn't think you had it in you.";
         }
        else if (primeInt == 5){
+         ArtDagon1.SetActive(true);
+          ArtNar1.SetActive(true);
          ArtYog1.SetActive(true);
           DialogueDisplay.SetActive(true);
                 Char4name.text = "Yog-Sothoth";
@@ -82,6 +85,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 6){
          ArtNar1.SetActive(true);
+         ArtYog1.SetActive(true);
+         ArtDagon1.SetActive(true);
           DialogueDisplay.SetActive(true);
                 Char1name.text = "You";
                 Char1speech.text = "…I always thought working the front desk at a dental office seemed like a decent career…";
@@ -89,6 +94,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
+         ArtYog1.SetActive(true);
+         ArtDagon1.SetActive(true);
          ArtNar1.SetActive(true);
           DialogueDisplay.SetActive(true);
                 Char3name.text = "Daegon";
@@ -97,6 +104,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
+         ArtDagon1.SetActive(true);
+         ArtYog1.SetActive(true);
          ArtNar1.SetActive(true);
           DialogueDisplay.SetActive(true);
                 Char1name.text = "";
@@ -105,6 +114,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Your glorious aquatic strength is getting all over my vlogging equipment.";
 }
                 else if (primeInt == 9){
+                  ArtNar1.SetActive(true);
+                  ArtDagon1.SetActive(true);
                   ArtYog1.SetActive(true);
                    DialogueDisplay.SetActive(true);
                          Char4name.text = "Yog-Sothoth";
@@ -114,6 +125,8 @@ public void talking(){         // main story function. Players hit next to progr
 }
                          else if (primeInt == 10){
                            ArtNar1.SetActive(true);
+                           ArtDagon1.SetActive(true);
+                           ArtYog1.SetActive(true);
                             DialogueDisplay.SetActive(true);
                                   Char1name.text = "You";
                                   Char1speech.text = "The who..?";
@@ -122,6 +135,8 @@ public void talking(){         // main story function. Players hit next to progr
 }
 else if (primeInt == 11){
   ArtNar1.SetActive(true);
+  ArtYog1.SetActive(true);
+  ArtDagon1.SetActive(true);
    DialogueDisplay.SetActive(true);
          Char1name.text = "";
          Char1speech.text = "";
@@ -130,6 +145,8 @@ else if (primeInt == 11){
        }
        else if (primeInt == 12){
          ArtNar1.SetActive(true);
+         ArtDagon1.SetActive(true);
+         ArtYog1.SetActive(true);
           DialogueDisplay.SetActive(true);
                 Char1name.text = "You";
                 Char1speech.text = "I’m sorry, sick footage of you doing WHAT?";
@@ -138,6 +155,8 @@ else if (primeInt == 11){
               }
               else if (primeInt == 13){
                 ArtNar1.SetActive(true);
+                ArtYog1.SetActive(true);
+                ArtDagon1.SetActive(true);
                  DialogueDisplay.SetActive(true);
                        Char1name.text = "";
                        Char1speech.text = "";
@@ -146,6 +165,8 @@ else if (primeInt == 11){
                      }
                      else if (primeInt == 14){
                        ArtNar1.SetActive(true);
+                       ArtYog1.SetActive(true);
+                       ArtDagon1.SetActive(true);
                         DialogueDisplay.SetActive(true);
                               Char1name.text = "You";
                               Char1speech.text = "How did I prioritize addressing some light rain showers over those other two…";
@@ -153,8 +174,8 @@ else if (primeInt == 11){
                               Char2speech.text = "";
                             }
                 // Turn off "Next" button, turn on "Choice" buttons
-          {      nextButton.SetActive(false);
-                allowSpace = false;
+          {      nextButton.SetActive(true);
+                allowSpace = true;
 //                Choice1a.SetActive(true); // function Choice1aFunct()
   //              Choice1b.SetActive(true); // function Choice1bFunct()
         }

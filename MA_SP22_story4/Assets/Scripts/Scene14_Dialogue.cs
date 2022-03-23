@@ -67,6 +67,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1speech.text = "";
                  Char2name.text = "Principal Kthulu";
                  Char2speech.text = "How’s everything going in here?";
+                 nextButton.SetActive(true);
          }
         else if (primeInt == 3){
                 Char1name.text = "YOU";
@@ -105,6 +106,8 @@ public void talking(){         // main story function. Players hit next to progr
          ArtNar.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
                 Char3name.text = "Nar";
                 Char3speech.text = "Ha! Suck it human!";
         }
@@ -113,6 +116,10 @@ public void talking(){         // main story function. Players hit next to progr
           ArtYog.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+                 Char3name.text = "";
+                 Char3speech.text = "";
                  Char4name.text = "Yog";
                  Char4speech.text = "Your karmic vengeance shall be swift and sure!";
          }
@@ -121,6 +128,12 @@ public void talking(){         // main story function. Players hit next to progr
            ArtDagon.SetActive(true);
                   Char1name.text = "";
                   Char1speech.text = "";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+                  Char3name.text = "";
+                  Char3speech.text = "";
+                  Char4name.text = "";
+                  Char4speech.text = "";
                   Char5name.text = "Dagon";
                   Char5speech.text = "Get out of here, loser…";
           }
@@ -130,6 +143,12 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1speech.text = "I cannot believe I came in hungover on a Monday morning for this… I need a vacation.";
                  Char2name.text = "";
                  Char2speech.text = "";
+                 Char3name.text = "";
+                 Char3speech.text = "";
+                 Char4name.text = "";
+                 Char4speech.text = "";
+                 Char5name.text = "";
+                 Char5speech.text = "";
                  nextButton.SetActive(false);
                  allowSpace = false;
                  NextScene1Button.SetActive(true);

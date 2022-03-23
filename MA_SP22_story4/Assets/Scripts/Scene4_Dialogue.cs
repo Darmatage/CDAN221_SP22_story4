@@ -149,6 +149,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char2speech.text = "";
   }
   else if (primeInt == 105){
+    ArtNarNormal.SetActive(false);
     ArtNarAngry1.SetActive(true);
            Char1name.text = "";
            Char1speech.text = "";
