@@ -45,7 +45,7 @@ void Update(){         // use spacebar as Next button
         if (allowSpace == true){
                 if (Input.GetKeyDown("space")){
                        talking();
-            }
+                }
         }
    }
 
@@ -55,14 +55,14 @@ public void talking(){         // main story function. Players hit next to progr
         if (primeInt == 1){
                 // AudioSource.Play();
         }
-        else if (primeInt == 112){
+        else if (primeInt == 2){
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "[Approaching Dagon as she’s messing with the classroom sink.]";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 113){
+        else if (primeInt == 3){
                ArtDagon1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
@@ -70,7 +70,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 114){
+        else if (primeInt == 4){
                ArtDagon1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "Dagon";
@@ -78,7 +78,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 115){
+        else if (primeInt == 5){
                ArtDagon1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
@@ -86,36 +86,40 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 116){
+       else if (primeInt == 6){
+              ArtDagon1.SetActive(false);
               ArtDagon2.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "Dagon";
                 Char1speech.text = "Wouldn't you like to know.";
               }
-             else if (primeInt == 117){
+             else if (primeInt == 7){
                     ArtDagon2.SetActive(true);
                       dialogue.SetActive(true);
                       Char1name.text = "YOU";
                       Char1speech.text = "[Would you like to know?]";
                       Choice1a.SetActive(true); // function Choice1aFunct()
                       NextScene1Button.SetActive(true);
+                      nextButton.SetActive(false);
               }
-              else if (primeInt == 118){
+              else if (primeInt == 8){
                      ArtDagon2.SetActive(true);
                        dialogue.SetActive(true);
                        Char1name.text = "YOU";
                        Char1speech.text = "So, water stuff, huh? Have you considered the school’s swim team?";
                        Choice1a.SetActive(false); // function Choice1aFunct()
                        NextScene1Button.SetActive(false);
+                      nextButton.SetActive(true);
                }
-               else if (primeInt == 119){
+               else if (primeInt == 9){
+                      ArtDagon2.SetActive(false);
                       ArtDagon1.SetActive(true);
                         dialogue.SetActive(true);
                         Char1name.text = "Dagon";
                         Char1speech.text = "What? That’s like, so offensive… (and way below my skill level).";
-
+                        nextButton.SetActive(true);
                 }
-                else if (primeInt == 120){
+                else if (primeInt == 10){
                        ArtDagon1.SetActive(true);
                          dialogue.SetActive(true);
                          Char1name.text = "YOU";
@@ -129,20 +133,16 @@ public void talking(){         // main story function. Players hit next to progr
                           Char1speech.text = "You know Mother Hydra?";
 
                   }
-                  else if (primeInt ==12){
-                         ArtDagon2.SetActive(true);
-                           dialogue.SetActive(true);
-                           Char1name.text = "Dagon";
-                           Char1speech.text = "What? That’s like, so offensive… (and way below my skill level).";
 
-                   }
-                   else if (primeInt ==13){
+                   else if (primeInt ==12){
+                          ArtDagon1.SetActive(false);
                           ArtDagon2.SetActive(true);
                             dialogue.SetActive(true);
                             Char1name.text = "YOU";
                             Char1speech.text = "[You notice her growing excitement makes the sink start to rumble. If you don’t do something now, it might burst!]";
                             NextScene2Button.SetActive(true);
                             NextScene3Button.SetActive(true);
+                            nextButton.SetActive(false);
                     }
                 //gameHandler.AddPlayerStat(1);
 
