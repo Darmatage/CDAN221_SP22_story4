@@ -17,6 +17,7 @@ public class Scene3_Dialogue : MonoBehaviour {
         public GameObject ArtYog1;
         public GameObject ArtYog2;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -33,6 +34,7 @@ void Start(){         // initial visibility settings
         ArtYog1.SetActive(false);
         ArtYog2.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -105,6 +107,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 8){
           ArtYog1.SetActive(true);
+          ArtBG1.SetActive(false);
+          ArtBG2.SetActive(true);
                  Char1name.text = "YOU";
                  Char1speech.text = "[Oh boy, it's runes.]";
                  Char2name.text = "";
@@ -144,7 +148,7 @@ public void talking(){         // main story function. Players hit next to progr
           else if (primeInt ==13){
             ArtYog1.SetActive(true);
                    Char1name.text = "YOU";
-                   Char1speech.text = "The seniors? You’re drawing on the desk for the upperclassmen? Why?[It doesn’t seem like he wants to tell you. You wait.] ";
+                   Char1speech.text = "The seniors? You’re drawing on the desk for the upperclassmen? Why? [It doesn’t seem like he wants to tell you, so you wait.] ";
                    Char2name.text = "";
                    Char2speech.text = "";
          }
@@ -200,7 +204,7 @@ public void talking(){         // main story function. Players hit next to progr
   else if (primeInt ==21){
 
            Char1name.text = "YOU";
-           Char1speech.text = "";
+           Char1speech.text = "Something must be done...";
            Char2name.text = "";
            Char2speech.text = "";
            NextScene2Button.SetActive(true);
