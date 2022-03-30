@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene9_Dialogue : MonoBehaviour {
+public class Scene9_dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -17,7 +17,6 @@ public class Scene9_Dialogue : MonoBehaviour {
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
-        public GameObject NextScene2Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
@@ -30,7 +29,6 @@ void Start(){         // initial visibility settings
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -82,45 +80,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1speech.text = "Let’s see here…";
                  Char2name.text = "";
                  Char2speech.text = "";
+                 primeInt = 299;
          }
-         else if (primeInt == 102){
-           ArtYog1.SetActive(true);
-                  Char1name.text = "You";
-                  Char1speech.text = "[Woah. I don’t know what any of these symbols mean… Guess I’ll fake it till I make it.]";
-                  Char2name.text = "";
-                  Char2speech.text = "";
-          }
-          else if (primeInt == 103){
-            ArtYog1.SetActive(true);
-                   Char1name.text = "You";
-                   Char1speech.text = "Ah, I see here. You’ve forgotten a closed bracket. Don’t worry I just add it in for you here quickly.";
-                   Char2name.text = "";
-                   Char2speech.text = "";
-           }
-           else if (primeInt == 104){
-             ArtYog1.SetActive(true);
-                    Char1name.text = "";
-                    Char1speech.text = "";
-                    Char2name.text = "Yog-Sothoth";
-                    Char2speech.text = "No, stop human! You’re messing up my runes! Now I'll need to start all over.";
-            }
-            else if (primeInt == 105){
-              ArtYog1.SetActive(true);
-                     Char1name.text = "You";
-                     Char1speech.text = "Well, it’ll give you something productive to do for the rest of detention.";
-                     Char2name.text = "";
-                     Char2speech.text = "";
-             }
-       else if (primeInt == 106){
-         ArtYog1.SetActive(true);
-                Char1name.text = "You";
-                Char1speech.text = "[Wait… What’s that sound.. Is that coming from the classroom sink?]";
-                Char2name.text = "";
-                Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-        }
+
 
        else if (primeInt == 200){
          ArtYog1.SetActive(true);
@@ -135,36 +97,37 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1speech.text = "Let’s see here…";
                  Char2name.text = "";
                  Char2speech.text = "";
+                 primeInt = 299;
          }
-         else if (primeInt == 202){
+         else if (primeInt == 300){
            ArtYog1.SetActive(true);
                   Char1name.text = "You";
                   Char1speech.text = "[Woah. I don’t know what any of these symbols mean… Guess I’ll fake it till I make it.]";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
-          else if (primeInt == 203){
+          else if (primeInt == 301){
             ArtYog1.SetActive(true);
                    Char1name.text = "You";
                    Char1speech.text = "Ah, I see here. You’ve forgotten a closed bracket. Don’t worry I just add it in for you here quickly.";
                    Char2name.text = "";
                    Char2speech.text = "";
            }
-           else if (primeInt == 204){
+           else if (primeInt == 302){
              ArtYog1.SetActive(true);
                     Char1name.text = "";
                     Char1speech.text = "";
                     Char2name.text = "Yog-Sothoth";
                     Char2speech.text = "No, stop human! You’re messing up my runes! Now I'll need to start all over.";
             }
-            else if (primeInt == 205){
+            else if (primeInt == 303){
               ArtYog1.SetActive(true);
                      Char1name.text = "You";
                      Char1speech.text = "Well, it’ll give you something productive to do for the rest of detention.";
                      Char2name.text = "";
                      Char2speech.text = "";
              }
-             else if (primeInt == 206){
+             else if (primeInt == 304){
                ArtYog1.SetActive(true);
                       Char1name.text = "You";
                       Char1speech.text = "[Wait… What’s that sound.. Is that coming from the classroom sink?]";
