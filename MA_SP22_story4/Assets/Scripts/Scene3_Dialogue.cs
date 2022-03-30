@@ -125,6 +125,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
          }
          else if (primeInt ==10){
+           ArtYog1.SetActive(false);
            ArtYog2.SetActive(true);
                   Char1name.text = "";
                   Char1speech.text = "";
@@ -139,6 +140,7 @@ public void talking(){         // main story function. Players hit next to progr
                    Char2speech.text = "";
            }
            else if (primeInt ==12){
+             ArtYog2.SetActive(false);
              ArtYog1.SetActive(true);
                     Char1name.text = "";
                     Char1speech.text = "";
@@ -181,6 +183,7 @@ public void talking(){         // main story function. Players hit next to progr
                Char2speech.text = "";
      }
      else if (primeInt ==18){
+       ArtYog1.SetActive(false);
        ArtYog2.SetActive(true);
               Char1name.text = "";
               Char1speech.text = "";
@@ -188,6 +191,7 @@ public void talking(){         // main story function. Players hit next to progr
               Char2speech.text = "...Maybe.";
     }
     else if (primeInt ==19){
+      ArtYog2.SetActive(false);
       ArtYog1.SetActive(true);
              Char1name.text = "";
              Char1speech.text = "";
@@ -195,6 +199,7 @@ public void talking(){         // main story function. Players hit next to progr
              Char2speech.text = "I just want the Oldest Ones, the Masters of this school, to understand how great and all powerful they are!";
    }
    else if (primeInt ==20){
+     ArtYog1.SetActive(false);
      ArtYog2.SetActive(true);
             Char1name.text = "YOU";
             Char1speech.text = "Well…";
@@ -202,7 +207,8 @@ public void talking(){         // main story function. Players hit next to progr
             Char2speech.text = "";
   }
   else if (primeInt ==21){
-
+    ArtYog1.SetActive(false);
+    ArtYog2.SetActive(false);
            Char1name.text = "YOU";
            Char1speech.text = "Something must be done...";
            Char2name.text = "";
