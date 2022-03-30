@@ -242,8 +242,10 @@ else if (primeInt == 11){
         }
 
     }
-
+    public void SceneChange1(){
+       SceneManager.LoadScene("Scene14");
 
 
 
  }
+}
