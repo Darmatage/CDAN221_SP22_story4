@@ -48,29 +48,48 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
+                ArtDagon1.SetActive(false);
+                ArtNar1.SetActive(false);
+                ArtYog1.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "You";
                 Char1speech.text = "[The sink has burst; water is gushing everywhere]";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+
         }
        else if (primeInt ==3){
          ArtDagon1.SetActive(true);
+         ArtNar1.SetActive(false);
+         ArtYog1.SetActive(false);
           DialogueDisplay.SetActive(true);
                 Char3name.text = "Daegon";
                 Char3speech.text = "Ha HA! That’ll show them just how powerful I really am!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+          //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
         ArtDagon1.SetActive(true);
          ArtNar1.SetActive(true);
+         ArtYog1.SetActive(false);
           DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Nyarlathotep";
                 Char2speech.text = "Wow Dags, I didn't think you had it in you.";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
        else if (primeInt == 5){
          ArtDagon1.SetActive(true);
@@ -81,8 +100,13 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "GAH! You fools! This childish display has washed away all my runes!";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+
                 //gameHandler.AddPlayerStat(1);
-        }
+}
        else if (primeInt == 6){
          ArtNar1.SetActive(true);
          ArtYog1.SetActive(true);
@@ -92,6 +116,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "…I always thought working the front desk at a dental office seemed like a decent career…";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
        else if (primeInt ==7){
          ArtYog1.SetActive(true);
@@ -102,6 +130,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "Bask in the light of my glorious aquatic strength!";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
        else if (primeInt == 8){
          ArtDagon1.SetActive(true);
@@ -112,6 +144,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "Nyarlathotep";
                 Char2speech.text = "Your glorious aquatic strength is getting all over my vlogging equipment.";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
 }
                 else if (primeInt == 9){
                   ArtNar1.SetActive(true);
@@ -122,6 +158,10 @@ public void talking(){         // main story function. Players hit next to progr
                          Char4speech.text = "I can’t believe this. I’ll have to start all over! The Oldest Ones are gonna kill me…";
                          Char2name.text = "";
                          Char2speech.text = "";
+                         Char3name.text = "";
+                         Char3speech.text = "";
+                         Char1name.text = "";
+                         Char1speech.text = "";
 }
                          else if (primeInt == 10){
                            ArtNar1.SetActive(true);
@@ -132,6 +172,10 @@ public void talking(){         // main story function. Players hit next to progr
                                   Char1speech.text = "The who..?";
                                   Char2name.text = "";
                                   Char2speech.text = "";
+                                  Char3name.text = "";
+                                  Char3speech.text = "";
+                                  Char4name.text = "";
+                                  Char4speech.text = "";
 }
 else if (primeInt == 11){
   ArtNar1.SetActive(true);
@@ -142,6 +186,10 @@ else if (primeInt == 11){
          Char1speech.text = "";
          Char2name.text = "Nyarlathotep";
          Char2speech.text = "How are my fans supposed to watch the sick footage of me summoning a demon with my camera all soggy like this?";
+         Char3name.text = "";
+         Char3speech.text = "";
+         Char4name.text = "";
+         Char4speech.text = "";
        }
        else if (primeInt == 12){
          ArtNar1.SetActive(true);
@@ -152,6 +200,10 @@ else if (primeInt == 11){
                 Char1speech.text = "I’m sorry, sick footage of you doing WHAT?";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
               }
               else if (primeInt == 13){
                 ArtNar1.SetActive(true);
@@ -162,6 +214,10 @@ else if (primeInt == 11){
                        Char1speech.text = "";
                        Char2name.text = "Nyarlathotep";
                        Char2speech.text = "Ugh, I forgot the human substitute was still here.";
+                       Char3name.text = "";
+                       Char3speech.text = "";
+                       Char4name.text = "";
+                       Char4speech.text = "";
                      }
                      else if (primeInt == 14){
                        ArtNar1.SetActive(true);
@@ -172,14 +228,22 @@ else if (primeInt == 11){
                               Char1speech.text = "How did I prioritize addressing some light rain showers over those other two…";
                               Char2name.text = "";
                               Char2speech.text = "";
+                              Char3name.text = "";
+                              Char3speech.text = "";
+                              Char4name.text = "";
+                              Char4speech.text = "";
                             }
                 // Turn off "Next" button, turn on "Choice" buttons
-          {      nextButton.SetActive(true);
+          {
+            nextButton.SetActive(true);
                 allowSpace = true;
 //                Choice1a.SetActive(true); // function Choice1aFunct()
   //              Choice1b.SetActive(true); // function Choice1bFunct()
         }
 
     }
+
+
+
 
  }

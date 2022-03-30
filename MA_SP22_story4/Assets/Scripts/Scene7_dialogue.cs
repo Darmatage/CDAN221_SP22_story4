@@ -115,16 +115,19 @@ public void talking(){         // main story function. Players hit next to progr
                                   Char1speech.text = "That’s it! I’m calling in Principal Kthulu.";
                                   Char2name.text = "";
                                   Char2speech.text = "";
+                                  nextButton.SetActive(false);
+                 allowSpace = false;
+                 NextScene1Button.SetActive(true);
 }
                 // Turn off "Next" button, turn on "Choice" buttons
-          {      nextButton.SetActive(true);
-                allowSpace = false;
+
+    //        public void SceneChange1(){
+    //               SceneManager.LoadScene("Scene8");
+//                                       }
+            }
+            public void SceneChange1(){
+               SceneManager.LoadScene("Scene12");
+        }
 //                Choice1a.SetActive(true); // function Choice1aFunct()
   //              Choice1b.SetActive(true); // function Choice1bFunct()
         }
-
-
-
-    }
-
- }
