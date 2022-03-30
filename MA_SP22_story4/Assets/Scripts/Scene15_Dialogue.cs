@@ -83,10 +83,14 @@ public void talking(){         // main story function. Players hit next to progr
                ArtKthulu1.SetActive(false);
                ArtNar1.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "Nyarlathotep";
-                Char1speech.text = "Don’t worry about it, Mister Kthulu! This is just a lesson learned for all of us.";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "Nyarlathotep";
+                Char3speech.text = "Don’t worry about it, Mister Kthulu! This is just a lesson learned for all of us.";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
         // else if (primeInt == 4){
         //        ArtKthulu1.SetActive(true);
@@ -102,20 +106,28 @@ public void talking(){         // main story function. Players hit next to progr
                ArtNar1.SetActive(false);
                ArtDagon1.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "Dagon";
-                Char1speech.text = "Well, I guess this means no more humans at the school. Even if they seem kind of cool.. I guess.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Dagon";
+                Char2speech.text = "Well, I guess this means no more humans at the school. Even if they seem kind of cool.. I guess.";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
        else if (primeInt ==6){
               ArtKthulu1.SetActive(false);
               ArtDagon1.SetActive(false);
               ArtYog1.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "Yog";
-                Char1speech.text = "The human was of no use at our school.";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "Yog";
+                Char4speech.text = "Whatever, the human is of no use at our school.";
                 //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 7){
@@ -126,15 +138,23 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "...In any case, I apologize for such poor supervision.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
         else if (primeInt ==8){
                ArtKthulu1.SetActive(false);
                ArtNar1.SetActive(true);
                  dialogue.SetActive(true);
-                 Char1name.text = "Nyarlathotep";
-                 Char1speech.text = "Oh well. You want some Demonic Nuggets? I ordered a bunch.";
+                 Char1name.text = "";
+                 Char1speech.text = "";
                  Char2name.text = "";
                  Char2speech.text = "";
+                 Char3name.text = "Nyarlathotep";
+                 Char3speech.text = "Oh well. Anyone want some Demonic Nuggets? I ordered a bunch.";
+                 Char4name.text = "";
+                 Char4speech.text = "";
                  //gameHandler.AddPlayerStat(1);
          }
          else if (primeInt == 9){
@@ -145,6 +165,10 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1speech.text = "Why not?";
                  Char2name.text = "";
                  Char2speech.text = "";
+                 Char3name.text = "";
+                 Char3speech.text = "";
+                 Char4name.text = "";
+                 Char4speech.text = "";
                  NextScene1Button.SetActive(true);
                  nextButton.SetActive(false);
          }
