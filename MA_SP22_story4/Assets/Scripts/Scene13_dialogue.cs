@@ -25,6 +25,8 @@ public class Scene13_dialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtNar1.SetActive(false);
+        ArtNar2.SetActive(false);
+        ArtKthulu.SetActive(false);
         ArtBG1.SetActive(true);
         NextScene1Button.SetActive(false);
         nextButton.SetActive(true);
@@ -45,9 +47,6 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtNar1.SetActive(true);
-               ArtNar2.SetActive(false);
-               ArtKthulu.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "You";
                 Char1speech.text = "You have to stop.";
@@ -57,6 +56,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
+         ArtNar1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Nyarlathotep";
@@ -172,6 +172,7 @@ public void talking(){         // main story function. Players hit next to progr
                                                            Char3speech.text = "";
                                                          }
                                                          else if (primeInt == 16){
+                                                           ArtNar2.SetActive(false);
                                                                   Char1name.text = "You";
                                                                   Char1speech.text = "[You head over to the phone and call the Principal.]";
                                                                   Char2name.text = "";
@@ -221,6 +222,7 @@ public void talking(){         // main story function. Players hit next to progr
                                                                                                      Char3speech.text = "I’ll be one my way, then.";
                                                                                                    }
                                                                                                    else if (primeInt == 22){
+                                                                                                     ArtKthulu.SetActive(false);
                                                                                                             Char1name.text = "You";
                                                                                                             Char1speech.text = "[You turn back to Nar.] Principal’s on his way.";
                                                                                                             Char2name.text = "";
@@ -229,6 +231,7 @@ public void talking(){         // main story function. Players hit next to progr
                                                                                                             Char3speech.text = "";
                                                                                                           }
                                                                                                           else if (primeInt == 23){
+                                                                                                            ArtNar1.SetActive(true);
                                                                                                                    Char1name.text = "";
                                                                                                                    Char1speech.text = "";
                                                                                                                    Char2name.text = "Nyarlathotep";
