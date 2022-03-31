@@ -232,16 +232,19 @@ else if (primeInt == 11){
                               Char3speech.text = "";
                               Char4name.text = "";
                               Char4speech.text = "";
+                              nextButton.SetActive(false);
+                                  allowSpace = false;
+                                  NextScene1Button.SetActive(true);
                             }
                 // Turn off "Next" button, turn on "Choice" buttons
-          {
-            nextButton.SetActive(true);
-                allowSpace = true;
+
+
 //                Choice1a.SetActive(true); // function Choice1aFunct()
   //              Choice1b.SetActive(true); // function Choice1bFunct()
-        }
+
 
     }
+
     public void SceneChange1(){
        SceneManager.LoadScene("Scene14");
 
