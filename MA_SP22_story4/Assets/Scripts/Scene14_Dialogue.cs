@@ -71,7 +71,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
         else if (primeInt == 3){
                 Char1name.text = "YOU";
-                Char1speech.text = "Uh, well Sir, considering I just put a stop to some sort of rune fabrication, and a deadly portal, I’d say things are going pretty dandy in here.";
+                Char1speech.text = "Uh, well Sir, considering I just put a stop to some sort of rune fabrication, and a deadly portal, I’d say things are going... off track.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -92,16 +92,34 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Principal Kthulu";
-                Char2speech.text = "Pfft. You humans are all the same. Total lack of creativity. These young pupils deserve a safe school environment to work on hone their crafts and shine!";
+                Char2speech.text = "Pfft. A deadly portal. You humans are all the same, total lack of creativity. These young pupils deserve a safe school environment to work on hone their crafts and shine!";
                 //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 7){
+        else if (primeInt == 7){
+                 Char1name.text = "YOU";
+                 Char1speech.text = "Sir, I-";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+       else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Principal Kthulu";
-                Char2speech.text = "Gather your belongings and leave the premises immediately. I can’t in good conscience allow such a terrible substitute as yourself to continue teaching at this school.";
+                Char2speech.text = "BUT because this is your first day, I'll grant you this one mistake.";
         }
-       else if (primeInt ==8){
+        else if (primeInt == 9){
+                 Char1name.text = "YOU";
+                 Char1speech.text = "Thank you sir!";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+         }
+         else if (primeInt == 10){
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "Principal Kthulu";
+                  Char2speech.text = "Of course, just this once.";
+         }
+       else if (primeInt ==11){
          ArtKthulu.SetActive(false);
          ArtNar.SetActive(true);
                 Char1name.text = "";
@@ -109,9 +127,20 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Nar";
-                Char3speech.text = "Ha! Suck it human!";
+                Char3speech.text = "Ha! Suck it human- wait, you're not going to fire them?";
         }
-        else if (primeInt ==9){
+        else if (primeInt ==12){
+          ArtKthulu.SetActive(true);
+          ArtNar.SetActive(false);
+                 Char1name.text = "Principal Kthulu";
+                 Char1speech.text = "No.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+                 Char3name.text = "";
+                 Char3speech.text = "";
+         }
+        else if (primeInt ==13){
+          ArtKthulu.SetActive(false);
           ArtNar.SetActive(false);
           ArtYog.SetActive(true);
                  Char1name.text = "";
@@ -123,7 +152,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char4name.text = "Yog";
                  Char4speech.text = "Your karmic vengeance shall be swift and sure!";
          }
-         else if (primeInt ==10){
+         else if (primeInt ==14){
            ArtYog.SetActive(false);
            ArtDagon.SetActive(true);
                   Char1name.text = "";
@@ -135,12 +164,25 @@ public void talking(){         // main story function. Players hit next to progr
                   Char4name.text = "";
                   Char4speech.text = "";
                   Char5name.text = "Dagon";
-                  Char5speech.text = "Get out of here, loser…";
+                  Char5speech.text = "See you later, loser!";
           }
-        else if (primeInt == 11){
+        else if (primeInt == 15){
             ArtDagon.SetActive(false);
                  Char1name.text = "YOU";
-                 Char1speech.text = "I cannot believe I came in hungover on a Monday morning for this… I need a vacation.";
+                 Char1speech.text = "I cannot believe I came in hungover on a Monday morning and still survived Eldrich God detention.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+                 Char3name.text = "";
+                 Char3speech.text = "";
+                 Char4name.text = "";
+                 Char4speech.text = "";
+                 Char5name.text = "";
+                 Char5speech.text = "";
+        }
+        else if (primeInt == 16){
+            ArtDagon.SetActive(false);
+                 Char1name.text = "YOU";
+                 Char1speech.text = "...Survived and kept the job no less!";
                  Char2name.text = "";
                  Char2speech.text = "";
                  Char3name.text = "";
