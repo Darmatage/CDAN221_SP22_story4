@@ -299,7 +299,7 @@ public void talking(){         // main story function. Players hit next to progr
                  NextScene1Button.SetActive(false);
          }
 
-       else if (primeInt == 104){
+       else if (primeInt == 103){
          ArtDagon1.SetActive(true);
            dialogue.SetActive(true);
              Char1name.text = "";
@@ -317,7 +317,7 @@ public void talking(){         // main story function. Players hit next to progr
              NextScene1Button.SetActive(false);
 
           }
-        else if (primeInt == 105){
+        else if (primeInt == 104){
           ArtDagon1.SetActive(false);
              ArtYog1.SetActive(true);
              dialogue.SetActive(true);
@@ -335,7 +335,7 @@ public void talking(){         // main story function. Players hit next to progr
              allowSpace = false;
              NextScene1Button.SetActive(false);
           }
-      else if (primeInt == 106){
+      else if (primeInt == 105){
         ArtYog1.SetActive(true);
           dialogue.SetActive(true);
             Char1name.text = "";
@@ -353,7 +353,7 @@ public void talking(){         // main story function. Players hit next to progr
             NextScene1Button.SetActive(false);
           }
 
-      else if (primeInt == 107){
+      else if (primeInt == 106){
         ArtYog1.SetActive(false);
           ArtNar1.SetActive(true);
 
@@ -373,7 +373,7 @@ public void talking(){         // main story function. Players hit next to progr
           NextScene1Button.SetActive(false);
            }
 
-           else if (primeInt == 108){
+           else if (primeInt == 107){
              ArtNar1.SetActive(true);
                dialogue.SetActive(true);
                  Char1name.text = "";
@@ -391,7 +391,7 @@ public void talking(){         // main story function. Players hit next to progr
                  NextScene1Button.SetActive(false);
             }
 
-            else if (primeInt == 109){
+            else if (primeInt == 108){
               ArtNar1.SetActive(false);
                   dialogue.SetActive(true);
                     Char1name.text = "YOU";
@@ -409,7 +409,7 @@ public void talking(){         // main story function. Players hit next to progr
                     NextScene1Button.SetActive(false);
               }
 
-              else if (primeInt == 110){
+              else if (primeInt == 109){
                  ArtNar1.SetActive(false);
                     dialogue.SetActive(true);
                       Char1name.text = "YOU";
