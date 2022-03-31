@@ -187,14 +187,14 @@ public void talking(){         // main story function. Players hit next to progr
 
         else if (primeInt == 300){
                  Char1name.text = "YOU";
-                 Char1speech.text = "[Yog and Da come over to see what’s going on. They both seem way to down with pushing me into the portal.]";
+                 Char1speech.text = "[Yog and Dagon come over to see what’s going on. They both seem way to down with pushing me into the portal.]";
                  Char2name.text = "";
                  Char2speech.text = "";
          }
          else if (primeInt == 301){
                   ArtNar1.SetActive(true);
                   ArtNar2.SetActive(true);
-                  Char1name.text = "DA";
+                  Char1name.text = "Dagon";
                   Char1speech.text = "Hey, did you order enough for everyone?";
                   Char2name.text = "";
                   Char2speech.text = "";
