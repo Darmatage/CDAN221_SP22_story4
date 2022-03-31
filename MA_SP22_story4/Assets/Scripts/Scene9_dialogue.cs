@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene9_dialogue : MonoBehaviour {
+public class Scene9_Dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -23,13 +23,13 @@ public class Scene9_dialogue : MonoBehaviour {
         private bool allowSpace = true;
 
 void Start(){         // initial visibility settings
-        DialogueDisplay.SetActive(false);
-        ArtYog1.SetActive(false);
-        ArtBG1.SetActive(true);
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
-        NextScene1Button.SetActive(false);
-        nextButton.SetActive(true);
+  DialogueDisplay.SetActive(false);
+  ArtYog1.SetActive(false);
+  ArtBG1.SetActive(true);
+  Choice1a.SetActive(false);
+  Choice1b.SetActive(false);
+  NextScene1Button.SetActive(false);
+  nextButton.SetActive(true);
    }
 
 void Update(){         // use spacebar as Next button
@@ -167,6 +167,12 @@ public void talking(){         // main story function. Players hit next to progr
 
         public void SceneChange1(){
                SceneManager.LoadScene("Scene8");
+        }
+        public void SceneChange2(){
+               SceneManager.LoadScene("Scene9");
+        }
+        public void SceneChange3(){
+               SceneManager.LoadScene("Scene10");
         }
     //    public void SceneChange2(){
         //        SceneManager.LoadScene("Scene2b");
