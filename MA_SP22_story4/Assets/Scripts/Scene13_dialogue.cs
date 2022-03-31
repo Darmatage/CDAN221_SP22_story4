@@ -20,8 +20,6 @@ public class Scene13_dialogue : MonoBehaviour {
         public GameObject ArtBG1;
         public GameObject NextScene1Button;
         public GameObject nextButton;
-        public GameHandler gameHandler;
-        public AudioSource audioSource;
         private bool allowSpace = true;
 
 void Start(){         // initial visibility settings
@@ -48,6 +46,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 2){
                ArtNar1.SetActive(true);
+               ArtNar2.SetActive(false);
+               ArtKthulu.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "You";
                 Char1speech.text = "You have to stop.";
@@ -129,6 +129,8 @@ public void talking(){         // main story function. Players hit next to progr
                         Char3speech.text = "";
                       }
                       else if (primeInt == 11){
+                        ArtNar1.SetActive(false);
+                        ArtNar2.SetActive(true);
                                Char1name.text = "";
                                Char1speech.text = "";
                                Char2name.text = "Nyarlathotep";
@@ -233,6 +235,9 @@ public void talking(){         // main story function. Players hit next to progr
                                                                                                                    Char2speech.text = "(flippant) I don’t think this will go the way you think it will, teach.";
                                                                                                                    Char3name.text = "";
                                                                                                                    Char3speech.text = "";
+                                                                                                                   nextButton.SetActive(false);
+                                                                                                                   allowSpace = false;
+                                                                                                                   NextScene1Button.SetActive(true);
                                                                                                                  }
 
                                                                                                                }
